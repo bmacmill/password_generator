@@ -2,10 +2,8 @@ body {
     margin: 0;
     background-color: #111827;
     font-family: "Karla", sans-serif;
-    box-sizing: border-box;
-    position: relative;
-
 }
+
 .col {
     display: flex;
     flex-direction: column;
@@ -14,22 +12,17 @@ body {
 
 .container {
     border-radius: 5px;
-    height:450px;
+    height: 400px;
     background-color: #1F2937;
     margin-top: 50px;
     padding: 50px;
-    
 }
-#pwrd{
-    max-width: 220px;
-    text-align: center;
-}
+
 
 #generated-pwd {
     margin-right: 5px;
     display: flex;
-    width: 400px;
-    
+    width: 400px; 
 }
 
 .pwd-btn {
@@ -40,6 +33,7 @@ body {
     border: none;
     margin: 25px 0;
 }
+
 
 #pwrd1, #pwrd2 {
    width: 211px;
