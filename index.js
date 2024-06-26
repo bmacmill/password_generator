@@ -4,6 +4,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 const btnPwd = document.getElementById("generatePwd")
 const passwordText1 = document.getElementById("pwrd1")
 const passwordText2 = document.getElementById("pwrd2")
+const passwordRange = document.getElementById("password-length")
+let passwordLengthValue = 5
 
 btnPwd.addEventListener("click", function() {
        passwordText1.textContent = generatePassword()
@@ -13,12 +15,18 @@ btnPwd.addEventListener("click", function() {
 
 function generatePassword(){
         let generatedPwd = ""
-        for(let i = 0; i < 15; i++){
+        for(let i = 0; i < passwordLengthValue; i++){
         let rand = Math.floor(Math.random() * characters.length)
         generatedPwd += characters[rand]
     }
     return generatedPwd
 }
+
+//password range
+passwordRange.addEventListener("input", (e) =>{
+    passwordLengthValue = e.target.value
+})
+
 
 // click to copy
 
